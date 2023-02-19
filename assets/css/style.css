@@ -1,0 +1,137 @@
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-image: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body::before {
+    content: '';
+    background-color: rgb(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.logo img {
+    height: 45px;
+    width: 167px;
+}
+
+header {
+    padding: 20px;
+    position: relative;
+    z-index: 10;
+}
+
+.login__body {
+    padding: 60px;
+    z-index: 90;
+    position: relative;
+    max-width: 450px;
+    height: 550px;
+    margin-left: 50%;
+    background-color: rgb(0, 0, 0, 0.75);
+    border-radius: 2px;
+    box-sizing: border-box;
+    transform: translateX(-50%);
+}
+
+.login__body h2 {
+    font-size: 32px;
+    color: #fff;
+    margin-top: 0;
+}
+
+.login__body input {
+    height: 50px;
+    width: 100%;
+    color: #fff;
+    background-color: #333;
+    border-radius: 5px;
+    border: none;
+    padding-left: 15px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.login__body input:hover {
+    background-color: #444;
+}
+
+/* SPACE BETWEEN EMAIL AND PASSWORD */
+.input__box {
+    margin-bottom: 25px;
+}
+
+.login__body button {
+    height: 50px;
+    width: 100%;
+    color: #fff;
+    background-color: #e50914;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.login__body button:hover {
+    background-color: #fc1722;
+    cursor: pointer;
+}
+
+.support {
+    display: flex;
+    justify-content: space-between;
+    color: #b3b3b3;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+}
+
+.help a {
+    text-decoration: none;
+}
+
+.help a:hover {
+    text-decoration: underline;
+}
+
+.sign__up {
+    color: #737373;
+    font-size: 16px;
+}
+
+.sign__up a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.sign__up a:hover {
+    text-decoration: underline;
+}
+
+.terms {
+    color: #737373;
+    font-size: 13px;
+
+}
+
+.terms a {
+    text-decoration: none;
+    color: #0071eb;
+}
